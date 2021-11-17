@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CardStyle">
+
+        <item name="cardElevation">3dp</item>
+        <item name="cardCornerRadius">@dimen/_6sdp</item>
+
+    </style>
+
+    <style name="actionBarItemBackground">
+        <item name="android:theme">@style/actionBarSelectableItemTheme</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+    </style>
+
+    <style name="actionBarSelectableItemTheme">
+        <item name="colorControlHighlight">@color/rippleColor</item>
+    </style>
+
+</resources>

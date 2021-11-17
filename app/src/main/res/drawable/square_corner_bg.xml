@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white">
+
+    <!--this creates the mask with the ripple effect-->
+    <item>
+        <shape
+            android:shape="rectangle">
+
+            <solid
+                android:color="@color/purple_500"/>
+
+            <corners
+                android:radius="@dimen/_25sdp"/>
+
+        </shape>
+    </item>
+
+</ripple>

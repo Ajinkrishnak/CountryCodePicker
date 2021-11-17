@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_no_code_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/flag_india" />
+
+    <TextView
+        android:id="@+id/tv_name_code"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="(IN)" />
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="+91" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        style="@style/actionBarItemBackground"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:srcCompat="@drawable/ic_arrow_drop_down" />
+
+</LinearLayout>

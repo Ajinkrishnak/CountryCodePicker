@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CardStyle">
+
+
+        <item name="cardElevation">@dimen/_12sdp</item>
+        <item name="cardCornerRadius">@dimen/_6sdp</item>
+        <item name="android:outlineAmbientShadowColor">#4D0C0D34</item>
+        <item name="android:outlineSpotShadowColor">#4D0C0D34</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
+</resources>
