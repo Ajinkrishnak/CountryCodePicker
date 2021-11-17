@@ -6,7 +6,7 @@
 
 #### A simple Country Code Picker library for Android completely written in Kotlin.
 
-<img src="https://github.com/Ajinkrishnak/CountryCodePicker/blob/main/art/image.jpeg">
+<img src="https://github.com/Ajinkrishnak/CountryCodePicker/blob/main/art/artgithub.jpeg">
  
 ## 🛠 Installation
 
