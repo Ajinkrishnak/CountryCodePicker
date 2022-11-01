@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/bg_color"
         android:paddingVertical="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +35,9 @@
                 <ImageView
                     android:layout_width="@dimen/_16sdp"
                     android:layout_height="@dimen/_16sdp"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    app:srcCompat="@drawable/ic_search" />
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_search"
+                    app:tint="@color/icon_tint_color" />
 
                 <EditText
                     android:id="@+id/et_search"

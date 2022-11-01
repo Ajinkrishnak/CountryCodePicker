@@ -69,9 +69,9 @@ class CountryCodePicker(context: Context, attributeSet: AttributeSet) :
             binding?.tvCode?.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize.toFloat())
             binding?.tvNameCode?.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize.toFloat())
         }
-        if (color > 0) {
-            setContentColor(color)
-        }
+
+        setContentColor(if (color > 0) color else R.color.text_color)
+
         if (arrowSize > 0) {
             setArrowSize(arrowSize)
         }
@@ -170,9 +170,9 @@ class CountryCodePicker(context: Context, attributeSet: AttributeSet) :
 
         } else {
             for (item in list) {
-                if (item.codeName==excludedCountries) {
-                        list.remove(item)
-                    }
+                if (item.codeName == excludedCountries) {
+                    list.remove(item)
+                }
             }
 
         }

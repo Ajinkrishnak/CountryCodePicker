@@ -25,7 +25,7 @@
         android:singleLine="true"
         android:textSize="@dimen/_12ssp"
         android:fontFamily="@font/montserrat_medium"
-        android:textColor="@color/black"
+        android:textColor="@color/text_color"
         android:text="India"
         android:layout_marginHorizontal="@dimen/_10sdp"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,6 +42,7 @@
         app:srcCompat="@drawable/ic_arrow_drop_down"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/icon_tint_color" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

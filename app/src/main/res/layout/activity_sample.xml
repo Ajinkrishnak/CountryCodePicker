@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.SampleActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
@@ -126,7 +126,7 @@
                     android:id="@+id/ccp_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_40sdp"
-                    app:contentColor="@color/black"
+                    app:contentColor="@color/text_color"
                     android:background="@drawable/grey_line_bg"
                     app:fontFamily="@font/montserrat_medium"
                     app:showFlag="true"
@@ -163,14 +163,15 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_submit"
                 style="@style/normalTextSemiBold"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_50sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:background="@drawable/square_corner_bg"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius="@dimen/_25sdp"
                 android:text="@string/submit"
                 android:textAllCaps="false"
                 android:textColor="@color/white"

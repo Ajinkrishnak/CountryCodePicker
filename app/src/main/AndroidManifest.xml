@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sample">
         <activity
-            android:name="com.ak.sample.MainActivity"
+            android:name="com.ak.sample.activity.SampleActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

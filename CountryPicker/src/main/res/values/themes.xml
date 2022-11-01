@@ -5,6 +5,7 @@
 
         <item name="cardElevation">3dp</item>
         <item name="cardCornerRadius">@dimen/_6sdp</item>
+        <item name="android:backgroundTint">@color/card_bg_color</item>
 
     </style>
 

@@ -4,4 +4,10 @@
     <color name="rippleColor">#26000000</color>
     <color name="white">#FFFFFF</color>
     <color name="greyLowOpacity">#0D000000</color>
+
+    //color light mode
+    <color name="text_color">#000000</color>
+    <color name="card_bg_color">#FFFFFF</color>
+    <color name="bg_color">#FFFFFF</color>
+    <color name="icon_tint_color">#000000</color>
 </resources>

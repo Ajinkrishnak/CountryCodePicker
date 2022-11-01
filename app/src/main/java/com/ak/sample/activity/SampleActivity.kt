@@ -1,24 +1,29 @@
-package com.ak.sample
+package com.ak.sample.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import androidx.appcompat.app.AlertDialog
-import com.ak.sample.databinding.ActivityMainBinding
+import com.ak.sample.databinding.ActivitySampleBinding
 import com.ak.sample.utils.errorSnack
 
-class MainActivity : AppCompatActivity() {
-    private var binding: ActivityMainBinding? = null
+class SampleActivity : AppCompatActivity() {
+    private var binding: ActivitySampleBinding? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySampleBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
         init()
     }
 
     private fun init() {
+
+        handleEvents()
+    }
+
+    private fun handleEvents() {
         binding?.btnSubmit?.setOnClickListener {
             val mFirstName = binding?.etFirstName?.text.toString()
             val mLastName = binding?.etLastName?.text.toString()
@@ -41,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                 )
             }
         }
+
     }
 
     private fun validation(

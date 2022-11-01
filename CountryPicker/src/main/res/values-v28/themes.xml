@@ -8,5 +8,7 @@
         <item name="cardCornerRadius">@dimen/_6sdp</item>
         <item name="android:outlineAmbientShadowColor">#4D0C0D34</item>
         <item name="android:outlineSpotShadowColor">#4D0C0D34</item>
+        <item name="android:backgroundTint">@color/card_bg_color</item>
+
     </style>
 </resources>
