@@ -8,6 +8,8 @@ object Constants {
 }
 
 fun setCountryList() {
+    if(!list.isEmpty())
+        return
     list.add(
         CountryItem(
             "ad",
