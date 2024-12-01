@@ -22,7 +22,7 @@ allprojects {
 
 Add this line to your ```build.gradle``` (module)
 ```bash
-implementation 'com.github.Ajinkrishnak:CountryCodePicker:1.0.2'
+implementation 'com.github.gordonyfg:CountryCodePicker:1.0.2'
 ```
 
 ## ⌨️ Usage
@@ -59,9 +59,8 @@ implementation 'com.github.Ajinkrishnak:CountryCodePicker:1.0.2'
 | Set Show Name Code status     | **showNameCode**            | boolean    | true                     |
 
 
-## ✍️ Author
+## ✍️ Original Author
 * <b>Ajinkrishna</b>
-* Email: ajinkrishna296@gmail.com
 
 
 ## 📝 License
