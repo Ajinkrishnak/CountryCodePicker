@@ -23,7 +23,7 @@ allprojects {
 Add this line to your ```build.gradle``` (module)
 ```bash
 	dependencies {
-	        implementation 'com.github.gordonyfg:CountryCodePicker:Tag'
+	        implementation 'com.github.gordonyfg:CountryCodePicker:v1.0.1'
 	}
 ```
 
