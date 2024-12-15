@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:theme="@style/Theme.MaterialComponents.Light"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
-
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cv_search"
             android:layout_width="0dp"
@@ -43,6 +42,9 @@
                 <EditText
                     android:id="@+id/et_search"
                     android:layout_width="match_parent"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
                     android:layout_height="@dimen/_32sdp"
                     android:layout_marginStart="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_8sdp"
@@ -50,10 +52,8 @@
                     android:background="@android:color/transparent"
                     android:inputType="textCapSentences"
                     android:imeOptions="actionSearch"
-                    android:hint="@string/search_country"
-                    android:textSize="@dimen/_12ssp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/montserrat_medium" />
+                    android:hint="@string/search_country"/>
+
 
             </LinearLayout>
 
@@ -67,6 +67,6 @@
             android:layout_marginHorizontal="@dimen/_20sdp"
             app:layout_constraintTop_toBottomOf="@+id/cv_search"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
