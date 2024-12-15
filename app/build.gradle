@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 34
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.ak.sample"
-        minSdkVersion 21
-        targetSdkVersion 34
+        minSdk 21
+        targetSdk 31
         versionCode 1
         versionName "1.0.0"
 
@@ -23,23 +23,22 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
     buildFeatures {
         viewBinding true
     }
-    namespace 'com.ak.sample'
 }
 
 dependencies {
     implementation project(path: ':CountryPicker')
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     //Sizing
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
