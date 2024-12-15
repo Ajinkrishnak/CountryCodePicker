@@ -11,10 +11,10 @@ import androidx.annotation.FontRes
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.ak.countrypicker.R
-import com.ak.countrypicker.databinding.LayoutCodePickerBinding
 import com.ak.fragment.BottomCountryPickerFragment
 import com.ak.model.CountryItem
 import androidx.fragment.app.FragmentActivity
+import com.ak.countrypicker.databinding.LayoutCodePickerBinding
 import com.ak.utils.Constants.list
 import com.ak.utils.setCountryList
 import java.util.*
@@ -152,7 +152,7 @@ class CountryCodePicker(context: Context, attributeSet: AttributeSet) :
 
     private fun setExcludedCountries(excludedCountries: String) {
         println("excludedCountries==$excludedCountries")
-        this.excludedCountries = excludedCountries.lowercase(Locale.getDefault())
+        this.excludedCountries = excludedCountries.toLowerCase(Locale.getDefault())
         println("this.excludedCountries==${this.excludedCountries}")
 
         if (excludedCountries.contains(",")) {

@@ -1,10 +1,12 @@
 <h1 align="center">Country Code Picker</h1>
 
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.5.31-blue.svg)](https://kotlinlang.org)  [![Platform](https://img.shields.io/badge/Platform-Android-green.svg?style=flat)](https://www.android.com/) [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![](https://jitpack.io/v/Ajinkrishnak/CountryCodePicker.svg)](https://jitpack.io/#Ajinkrishnak/CountryCodePicker)
+[![](https://jitpack.io/v/gordonyfg/CountryCodePicker.svg)](https://jitpack.io/#gordonyfg/CountryCodePicker)
 <br/>
 
 #### A simple Country Code Picker library for Android completely written in Kotlin.
+#### Automating Releases with JitPack for CI/CD pipeline - continuous delivery.
+https://jitpack.io/#gordonyfg/CountryCodePicker
 
 <img src="https://github.com/Ajinkrishnak/CountryCodePicker/blob/main/art/artgithub.jpeg">
  
@@ -22,7 +24,9 @@ allprojects {
 
 Add this line to your ```build.gradle``` (module)
 ```bash
-implementation 'com.github.Ajinkrishnak:CountryCodePicker:1.0.2'
+	dependencies {
+	        implementation 'com.github.gordonyfg:CountryCodePicker:v1.0.1'
+	}
 ```
 
 ## ⌨️ Usage
@@ -59,9 +63,8 @@ implementation 'com.github.Ajinkrishnak:CountryCodePicker:1.0.2'
 | Set Show Name Code status     | **showNameCode**            | boolean    | true                     |
 
 
-## ✍️ Author
+## ✍️ Original Author
 * <b>Ajinkrishna</b>
-* Email: ajinkrishna296@gmail.com
 
 
 ## 📝 License

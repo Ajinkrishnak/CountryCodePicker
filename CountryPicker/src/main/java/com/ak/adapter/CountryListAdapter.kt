@@ -64,16 +64,16 @@ class CountryListAdapter(
 
                     for (model in list) {
 
-                        if (model.countryName!!.lowercase(Locale.ROOT)
-                                .contains(charString.lowercase(Locale.ROOT)) || model.countryName.uppercase(
+                        if (model.countryName!!.toLowerCase(Locale.ROOT)
+                                .contains(charString.toLowerCase(Locale.ROOT)) || model.countryName.toUpperCase(
                                 Locale.ROOT
                             )
-                                .contains(charString.lowercase(Locale.ROOT)) ||
-                            model.phoneCode?.lowercase(Locale.ROOT)
-                                ?.startsWith(charString.lowercase(Locale.ROOT)) == true || model.phoneCode?.uppercase(
+                                .contains(charString.toLowerCase(Locale.ROOT)) ||
+                            model.phoneCode?.toLowerCase(Locale.ROOT)
+                                ?.startsWith(charString.toLowerCase(Locale.ROOT)) == true || model.phoneCode?.toUpperCase(
                                 Locale.ROOT
                             )
-                                ?.startsWith(charString.lowercase(Locale.ROOT)) == true
+                                ?.startsWith(charString.toLowerCase(Locale.ROOT)) == true
                         ) {
                             filteredList.add(model)
                         }
